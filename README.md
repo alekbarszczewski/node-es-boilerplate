@@ -3,7 +3,7 @@
 
 ### Requirements
 
-* yarn >= 1.3.2
+* yarn >= 1.2.1
 * Node.js >= 8.4.0
 
 ### Install
