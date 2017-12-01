@@ -1,19 +1,29 @@
 {
   "name": "node-es-boilerplate",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "private": true,
   "license": "MIT",
+  "scripts": {
+    "dev": "babel-node src/index.js"
+  },
+  "engines": {
+    "node": ">=8.4.0",
+    "yarn": ">=1.3.2"
+  },
   "devDependencies": {
-    "babel-cli": "7.0.0-beta.3",
+    "@babel/cli": "^7.0.0-beta.32",
+    "@babel/core": "^7.0.0-beta.32",
+    "@babel/node": "^7.0.0-beta.32",
+    "@babel/plugin-proposal-class-properties": "^7.0.0-beta.32",
+    "@babel/plugin-proposal-decorators": "^7.0.0-beta.32",
+    "@babel/plugin-proposal-export-namespace": "^7.0.0-beta.32",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0-beta.32",
+    "@babel/plugin-transform-classes": "^7.0.0-beta.32",
+    "@babel/preset-env": "^7.0.0-beta.32",
+    "@babel/preset-flow": "^7.0.0-beta.32",
     "babel-eslint": "^8.0.2",
     "babel-plugin-root-import": "^5.1.0",
-    "babel-plugin-transform-class-properties": "^6.24.1",
-    "babel-plugin-transform-decorators-legacy": "^1.3.4",
-    "babel-plugin-transform-export-namespace": "^7.0.0-alpha.20",
-    "babel-plugin-transform-object-rest-spread": "^6.26.0",
-    "babel-preset-env": "7.0.0-beta.3",
-    "babel-preset-flow": "^6.23.0",
-    "babel-register": "7.0.0-beta.3",
     "chai": "^4.1.2",
     "cross-env": "^5.1.1",
     "eslint": "^4.11.0",
@@ -28,6 +38,12 @@
     "nock": "^9.1.3",
     "nyc": "^11.3.0",
     "opn-cli": "^3.1.0",
+    "rimraf": "^2.6.2",
     "sinon": "^4.1.2"
+  },
+  "dependencies": {
+    "@babel/register": "^7.0.0-beta.32",
+    "config": "^1.28.1",
+    "envalid": "^4.1.1"
   }
 }
