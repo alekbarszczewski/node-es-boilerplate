@@ -1,3 +1,4 @@
+/* eslint-env mocha */
 
 import index from '@/index'
 
