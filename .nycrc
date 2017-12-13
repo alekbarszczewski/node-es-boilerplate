@@ -10,5 +10,7 @@
     "lcov",
     "text"
   ],
-  "report-dir": "./coverage"
+  "report-dir": "./coverage",
+  "sourceMap": false,
+  "instrument": false
 }

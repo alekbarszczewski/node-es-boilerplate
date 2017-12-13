@@ -17,5 +17,10 @@ module.exports = {
       rootPathPrefix: '@',
       rootPathSuffix: 'src'
     }]
-  ]
+  ],
+  env: {
+    test: {
+      plugins: ['istanbul']
+    }
+  }
 }
