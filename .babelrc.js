@@ -3,8 +3,7 @@ module.exports = {
     '@babel/flow',
     [ '@babel/env', {
       targets: {
-        node: 'current',
-        useBuiltIns: 'usage'
+        node: 'current'
       }
     }]
   ],

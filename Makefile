@@ -8,7 +8,7 @@ lint-fix:
 test: clean-cov
 	yarn nyc --check-coverage \
 	yarn cross-env NODE_ENV=test \
-	yarn mocha --opts .mocharc "./test/*.test.js"
+	yarn mocha --opts .mocharc "./test/**/*.test.js"
 report:
 	yarn opn ./coverage/index.html
 build: clean-dist
